@@ -18,6 +18,8 @@ public class InstantiationExample {
      * @return any object.
      */
     public Object instantiateANewObject(){
-        return null;
+
+        Kingdom king = new Kingdom();
+        return king;
     }
 }
