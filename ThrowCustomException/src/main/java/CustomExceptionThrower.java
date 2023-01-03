@@ -11,11 +11,7 @@ public class CustomExceptionThrower {
 
      
     public void throwCustomException() throws CustomException{
-        try {
-            int myInt = Integer.parseInt("Matthew");
-        } catch (Exception e) {
-            System.out.println("Hey. You have to use an int!!");
-        } 
+        throw new CustomException();
 
     }
 
