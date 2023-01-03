@@ -8,7 +8,14 @@ public class CustomExceptionThrower {
      *
      * I recommend looking at the test case for a good example of try/catch block usage, as well.
      */
-    public void throwCustomException(){
+
+     
+    public void throwCustomException() throws CustomException{
+        try {
+            int myInt = Integer.parseInt("Matthew");
+        } catch (Exception e) {
+            System.out.println("Hey. You have to use an int!!");
+        } 
 
     }
 
